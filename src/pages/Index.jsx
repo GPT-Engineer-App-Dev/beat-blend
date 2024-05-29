@@ -1,5 +1,6 @@
-import { Box, Container, Flex, Heading, HStack, IconButton, Image, Input, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, HStack, IconButton, Image, Text, VStack, Button } from "@chakra-ui/react";
 import { FaHome, FaSearch, FaBook, FaMusic } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -32,6 +33,9 @@ const Index = () => {
             <Text>Playlist 3</Text>
           </Box>
         </Flex>
+        <Link to="/create-playlist">
+          <Button colorScheme="teal" mt={4}>Create New Playlist</Button>
+        </Link>
       </Box>
 
       {/* Footer */}
